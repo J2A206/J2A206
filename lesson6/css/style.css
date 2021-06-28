@@ -1,0 +1,281 @@
+@charset "utf-8";
+
+/* 初期スタイル調整 */
+* {
+  box-sizing: border-box;
+}
+
+/* body全体の初期スタイル調整 */
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", Arial, "メイリオ", Meiryo, sans-serif;
+  color: #806342;
+  background-color: #fff;
+}
+
+/* 各要素の初期スタイル調整 */
+h1, h2 {
+  margin-top: 0;
+  margin-bottom: 30px;
+  line-height: 1.2;
+}
+
+a {
+  color: #806342;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+ul {
+  margin: 1em 0;
+  padding: 0;
+  list-style: none;
+}
+figure {
+  margin: 0;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+address {
+  font-style: normal;
+}
+/* 初期スタイル調整ここまで */
+
+
+/* --------------------------------------------------
+  細部のスタイル指定ここから
+-------------------------------------------------- */
+
+/* ヘッダー */
+.header {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+/* ロゴ */
+.logo {
+  margin: 0;
+  text-align: center;
+}
+
+/* メイン */
+.main {
+  width: 1000px;
+  margin: 0 auto;
+}
+/* トップ（メインイメージ） */
+.top {
+  margin-bottom: 20px;
+  text-align: center;
+}
+/* ナビゲーション */
+.nav {
+  margin-bottom: 50px;
+  text-align: center;
+}
+/* ナビリスト */
+.nav-list li {
+  display: inline-block;
+  margin: 0;
+  border-left: 1px solid #806342;
+}
+.nav-list li:first-child {
+  border-left: none;
+}
+.nav-list a {
+  display: inline-block;
+  padding: 0 15px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+/* セクション */
+.section {
+  margin: 0 auto 80px;
+}
+/* 見出し */
+.heading {
+  margin-bottom: 40px;
+  text-align: center;
+}
+/* アバウト */
+.about {
+  text-align: center;
+}
+/* メニュー */
+.menu {
+  text-align: center;
+}
+/* メニューリスト */
+.menu-list {
+   display: inline-block;
+   margin-left: 30px;
+   list-style: disc;
+   text-align: left;
+}
+.menu-list li {
+   margin-bottom: 10px;
+}
+/* フォト */
+.photos {
+  width: 750px;
+}
+/* フォトリスト */
+.photos-list li {
+  margin-bottom: 30px;
+}
+.photos figcaption {
+  font-size: 12px;
+}
+/* アクセス */
+.access {
+  width: 600px; /* アクセス全体の横幅 */
+}
+
+/* アクセス 左右横並び */
+.access-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+/* 左側（フレックスアイテム） */
+.access-address {
+  font-size: 14px;
+}
+.access-address strong {
+  display: block; /* ブロックレベルとして扱う */
+  margin: 10px 0;
+  font-size: 22px;
+}
+
+/* 右側（フレックスアイテム） */
+.access-map {
+  /* フレックスアイテムへの指定 */
+  flex: 0 1 295px;
+  max-width: 295px;
+}
+
+/* フッター */
+.footer {
+  min-width: 1000px; /* 最小幅の指定 */
+  margin: 0 auto;
+  padding: 20px 0;
+  background-color: #806342; /* 背景色の指定 */
+}
+
+/* フッターの中身 */
+.footer-container {
+  /* flexbox（横並びにする要素の親に指定） */
+  display: flex;
+  width: 660px;
+  margin: 0 auto;
+}
+
+/* フッターロゴ（左側） */
+.footer-logo {
+  /* フレックスアイテムへの指定 */
+  flex: 0 1 200px;
+  max-width: 200px;
+  margin: 0;
+}
+
+/* フッター その他要素（右側） */
+.footer-body {
+  /* フレックスアイテムへの指定 */
+  flex: 0 1 auto;
+  padding-top: 20px;
+}
+
+/* フッターナビ */
+.footer-nav {
+  margin-bottom: 20px;
+}
+
+/* フッターナビリスト */
+.footer-nav-list li {
+  display: inline-block;
+  margin: 0;
+  border-left: 1px solid #fff;
+}
+.footer-nav-list li:first-child {
+  border-left: none; /* 最初のliから左の境界線を消す */
+}
+.footer-nav-list a {
+  display: inline-block;
+  padding: 0 15px;
+  line-height: 1.2;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+/* コピーライト */
+.copyright {
+  margin: 0;
+  padding-left: 15px;
+  color: #fff;
+}
+.copyright small {
+  font-size: 11px;
+}
+
+/* ここから追加課題用の設定 */
+
+/* YouTube・Google MAPのサイズ */
+figure iframe {
+  width: 100%;
+}
+/* トップ画像をスライド */
+.slide {
+  white-space: nowrap;
+  overflow: hidden;
+}
+.slide img {
+  width: inherit;
+  height: inherit;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+@keyframes slide-4 {
+  0% { margin-left: 0; }
+  33% { margin-left: -100%; }
+  66% { margin-left: -200%; }
+  100% { margin-left: -300%; }
+}
+.slide > :first-child {
+  animation-name: slide-4;
+  animation-duration: 40s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 5s;
+  animation-iteration-count: infinite;
+}
+/* トップに戻るボタンを右下に固定 */
+.pagetop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.menu-list li {
+  list-style: none;
+}
+.menu-list li::before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  background-image: url(../img/menu_li.png);
+  background-size: contain;
+  vertical-align: middle;
+}
